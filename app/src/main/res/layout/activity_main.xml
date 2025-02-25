@@ -18,7 +18,35 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:id="@+id/myLayout"
+            android:gravity="center"
             >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/edText"
+                android:hint="Enter number"
+                android:inputType="number"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/btn"
+                android:text="Calculate"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Something"
+                android:textSize="20sp"
+                android:id="@+id/myText"
+                android:gravity="center"
+                />
 
 
         </LinearLayout>
