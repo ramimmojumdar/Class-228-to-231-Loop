@@ -19,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout myLayout;
     TextView myText;
     EditText edText;
-    int factorial = 1;
     Button btn;
+
+    String[] names = {"Ali", "Ahmed", "Ali"};
+    int[] ages = {20, 21, 22};
 
 
     @Override
@@ -36,18 +38,30 @@ public class MainActivity extends AppCompatActivity {
         //=====================================
 
         myText = findViewById(R.id.myText);
+        myText.setText("");
+
+        for(int i = 0; i < names.length; i++){
+
+            myText.append(names[i] + " " + ages[i] + " \n");
+
+        }
+
+
+
+
+ /*
         edText = findViewById(R.id.edText);
         btn =  findViewById(R.id.btn);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String myString = edText.getText().toString().trim(); // Trim দিয়ে স্পেস রিমুভ করি
+                String myString = edText.getText().toString().trim();
 
                 if (!myString.isEmpty()) {
                     try {
                         int myInt = Integer.parseInt(myString);
-                        long factorial = 1; // ফ্যাক্টোরিয়াল স্টোর করার জন্য
+                        long factorial = 1;
                         for (int i = 1; i <= myInt; i++) {
                             factorial *= i;
                         }
@@ -63,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+*/
 
 
 
